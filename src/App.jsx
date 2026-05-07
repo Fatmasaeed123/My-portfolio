@@ -280,18 +280,18 @@ function App() {
           </div>
         </section>
 
-        <section id="projects" className="reveal-on-scroll space-y-5 py-20">
+        <section id="projects" className="space-y-5 py-10 md:py-20 px-4">
           <div className="flex items-center gap-3">
             <FaCode className="text-[#A78BFA]" />
             <h2 className={gradientHeadingClass}>Projects</h2>
           </div>
-          <div className="grid gap-4 md:grid-cols-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {projects.map((project) => (
               <article
                 key={project.name}
                 className={`rounded-2xl border border-white/10 bg-[#2a1e44]/35 p-6 backdrop-blur-2xl ${smoothInteractiveClass} hover:scale-[1.03] hover:shadow-[inset_0_0_45px_rgba(175,120,255,0.35),0_20px_55px_rgba(96,57,180,0.5)]`}
               >
-                <div className="h-24 rounded-xl bg-cover bg-center bg-no-repeat border border-white/10 bg-linear-to-br from-[#31204d]/80 via-[#221739]/70 to-[#140f29]/75" style={{backgroundImage:`url(${project.image})`,width:'100%' , height:'50vh'}} />
+                <div className=" rounded-xl bg-cover bg-center bg-no-repeat border border-white/10 bg-linear-to-br from-[#31204d]/80 via-[#221739]/70 to-[#140f29]/75" style={{backgroundImage:`url(${project.image})`,width:'100%' , aspectRatio:'1/1', height:'30vh'}} />
                 <h3 className="mt-4 text-lg font-semibold text-white">{project.name}</h3>
                 <p className="mt-3 text-sm font-light leading-7 text-white/80">
                   {project.description}
