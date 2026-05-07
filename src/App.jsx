@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import emailjs from 'emailjs-com'
-import myPhoto from './assets/myphoto.png'
+import myPhoto from './assets/myphoto.jpeg'
 import weather from './assets/weather.jpg'
 import flower from './assets/flower.jpg'
 import form from './assets/form.jpg'
